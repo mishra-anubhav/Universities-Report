@@ -1,0 +1,577 @@
+<head>
+    <title>LeapFinance | University Pages</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin:0px;
+            font-family: 'Roboto', sans-serif;
+            color:#212529;                 
+            }
+        *{outline: none;}   
+        main{
+                padding: 0px 150px;
+        }
+        .margin-in-main{
+                margin: 0px 100px;
+                text-align: justify;
+        }
+    .header{
+            height: 70px;
+            width:100vw;
+            background: white;
+            position:fixed;
+            box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+        }
+        hr{
+            background-color:#aab8b8;
+        }
+        .button{
+        box-shadow: 0px 2px 4px rgba(130, 136, 148, 0.16), 0px 0px 1px rgba(130, 136, 148, 0.16);
+        background-color: #443eff;
+        color: #fff;
+        line-height: 1;
+        cursor: pointer;
+        font-size: 15px;
+        padding: 10px 20px;
+        border-radius: 6px;
+        font-weight: 600;
+        }
+        .button:hover{
+        box-shadow: 0px 2px 4px rgba(130, 136, 148, 0.30), 0px 0px 1px rgba(130, 136, 148, 0.30);
+        background-color: #aab8b7;
+        border:2px  #443eff;
+        color:#443eff;
+        }
+       .big-font{
+        font-size: 60px;
+        letter-spacing: -1.3px;
+        line-height: 58px;
+        }
+    .left{
+        float:left;
+        padding:20px;
+        margin-left:10vw;
+    }
+    .right{
+        float: right;
+        padding:20px;
+    }
+    .logo{
+        width:155px;
+        height: 30px;
+    }
+    .header-link{
+        text-decoration: none;
+        margin-right:20px
+    }
+    .cover{
+        background-image: url("./source/columbia-university1.jpg");
+        border-radius: 15px;
+        background-size: cover;
+        height: 500px;
+        padding:auto;
+        color:white;
+    }
+    .margin-cover{
+        padding:50px 200px;
+        padding-top:50px;
+    }
+    .uni-logo{
+        height: 100px;
+        width:100px;
+        border-radius: 0.25em;
+    }
+    .flex-container {
+        display: flex;
+    }
+
+    .flex-container > div {
+        margin: 20px;
+        padding: 20px;
+        font-size: 20px;
+        text-align: center;
+        height: 100px;
+        width:200px;
+        box-shadow:3px 3px 5px 6px #ccc;
+    }
+    
+    h1{
+        margin-top:100px;
+    }
+    table{
+        border-collapse: collapse;
+        border-radius: 1em;
+        overflow: hidden;
+        }
+ th, td {
+     text-align:center;
+  padding: 1em;
+  background: #ddd;
+  border: 2px solid white; 
+}
+
+    footer{
+            height: 400px;
+            background: #E0EAF3;
+        }
+/* Dropdown Button */
+.dropbtn {
+  border: 2px solid#3498DB;
+  color: #2980B9;
+  padding: 16px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  color:white;
+  background-color: #2980B9;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #ddd}
+.show {display:block;}
+#Engineering{
+display: block;
+}
+#Business{
+display:none;
+}
+#Science{
+display:none;
+}
+#Arts{
+display:none;
+}
+#Architecture{
+display:none;
+}
+
+    </style>
+    </head>
+<body>
+    <div class="header">
+        <div class="left"><img class="logo" src="./source/logo.svg"></div>
+        <div class="right"><a class="header-link " href="https://leapfinance.com/"> HOME </a>
+        <a class="header-link unilink button"  href="#"> UNIVERSITIES </a></div>
+        </div>
+    <main>
+        <div style="height: 80px"></div>
+        <div class = "cover">
+            <div class="margin-cover">
+            <img class = "uni-logo"  src="./source/columbia-logo.jpg">
+            <p class ="big-font">Columbia University</p>
+            <p>New York, United States<br>
+                Est. 1754<br>
+                Ranked among top 20 universities in US<br></p>
+            </div>
+        </div>
+        <div class="margin-in-main">
+            <div>
+                <h1>About</h1>
+                <p>Columbia University, major private institution of higher education in New York, New York, U.S. It is one of the Ivy League schools. Founded in 1754 as King’s College, it was renamed Columbia College when it reopened in 1784 after the American Revolution.<br><br> It became Columbia University in 1912. Columbia College was the undergraduate liberal arts school for men until 1983, when women began to be admitted. Besides Columbia College, the university includes two other undergraduate schools (the School of Engineering and Applied Science and the School of General Studies) and the affiliated Barnard and Teachers colleges.<br><br></p>
+            </div>
+            <hr style="height:5px;border-radius:25px ;color:#333;background-color:#333;" />
+
+            <div>
+                <h2>Select School: <br><br>
+                <button onCLick="Dropdown()" class="dropbtn" style="padding:10px;font-size:20px;border-radius:25px">Choose School  &#9660;</button>  
+                <div id="myDropdown" class="dropdown-content" style="padding:10px;font-size:15px;border-radius:25px">
+                      <a onClick="Engineering()">Engineering</a>
+                      <a onClick="Business()">Business</a>
+                      <a onClick="Science()">Science</a>
+                      <a onClick="Arts()">Arts</a>
+                      <a onClick="Architecture()">Architecture</a>
+                </div></h2>
+            </div>
+        </div>
+        <div id ="Engineering">
+            <center><h1 style="margin-top: 30px;font-size:60px">Engineering</h1></center>
+            <div class="flex-container">
+                    <div><br> Fu Foundation School of Engineering and Applied Science </div>
+                    <div> The engineering masters acceptance rate is 22%</div>
+                    <div>Ranking <br><strong>3<sup>rd</sup></strong><br> in USA</div>
+                    <div>$8,400/year<br>average living expense</div>  
+            </div><br><br>
+            <div class="flex-container">
+                    <div>
+                        <br>Average GRE <br><strong>166Q</strong><br>
+                    </div>
+                    <div><br><strong>#14</strong><br> in Engineering</div>
+                    <div><br>$26,000/year average tuition fee</div>
+                    <div><br>$110,000/year salary</div>  
+            </div><br>
+            <div class="courses">
+                    <h1>Engineering graduate courses offered at Columbia</h1>
+
+                    <table style="width:100%">
+                      <tr>
+                        <th>COURSES</th>
+                        <th>Description</th> 
+                      </tr>
+                      <tr>
+                        <td>Aerospace Engineering</td>
+                        <td>Aerospace Engineering</td>
+                        </tr>
+                      <tr>
+                        <td>Computer Science</td>
+                        <td>Computer Science</td>
+                      </tr>
+                      <tr>
+                        <td>Biological Engineering</td>
+                        <td>Biological Engineering</td>
+                      </tr>
+                      <tr>
+                        <td>Chemical Engineering</td>
+                        <td>Chemical Engineering</td>
+                      </tr>
+                      <tr>
+                        <td>Civil Engineering</td>
+                        <td>Civil Engineering</td>
+                      </tr>
+                      <tr>
+                        <td>Mechanical Engineering</td>
+                        <td>Mechanical Engineering</td>
+                      </tr>
+                      <tr>
+                        <td>Industrial Engineering</td>
+                        <td>Industrial Engineering</td>
+                      </tr>
+                   </table>
+            </div><br><br>
+ 
+        <div class="contact">
+            <div class="flex-container">
+                <div>
+                 Talk to a University Ambassdor<br><br><a class="button">CONTACT</a>
+                </div>
+                <div>See Similar Profiles<br><br><br><a class="button">CHECK</a></div>
+                <div>Join group of Columbia Aspirants<br><br><a class="button">JOIN</a></div>
+                <div>Talk to our Counsellor<br><br><a class="button">CONTACT</a></div>  
+            </div>
+        </div> </div>
+        <div id ="Business">
+            <center><h1 style="margin-top: 30px;font-size:60px">Business</h1></center>
+            <div class="flex-container">
+                    <div> Private university</div>
+                    <div>18% acceptance rate</div>
+                    <div>Ranking 3rd in USA</div>
+                    <div>$8,600/year
+                        average living expense</div>  
+            </div>
+            <div class="flex-container">
+                    <div>
+                        Average GRE 166Q
+                    </div>
+                    <div>#1 in CS</div>
+                    <div>$49,600/year average tuition fee</div>
+                    <div>$100,000/year
+                        salary</div>  
+            </div><br>
+            <div class="courses">
+                    <h1>Engineering graduate courses offered at MIT</h1>
+
+                    <table style="width:100%">
+                      <tr>
+                        <th>COURSES</th>
+                        <th>Description</th> 
+                      </tr>
+                      <tr>
+                        <td>Aerospace Engineering</td>
+                        <td>Aerospace Engineering</td>
+                        </tr>
+                      <tr>
+                        <td>Computer Science</td>
+                        <td>Computer Science</td>
+                      </tr>
+                      <tr>
+                        <td>Electrical Engineering</td>
+                        <td>Electrical Engineering</td>
+                      </tr>
+                    </table>
+            </div><br><br>
+ 
+        <div class="contact">
+            <div class="flex-container">
+                <div>
+                 Talk to a University Ambassdor<br><br><a class="button">CONTACT</a>
+                </div>
+                <div>See Similar Profiles<br><br><br><a class="button">CHECK</a></div>
+                <div>Join group of Columbia Aspirants<br><br><a class="button">JOIN</a></div>
+                <div>Talk to our Counsellor<br><br><br><a class="button">CONTACT</a></div>  
+            </div>
+        </div> </div>
+        <div id ="Science">
+            <center><h1 style="margin-top: 30px;font-size:60px">Science</h1></center>
+
+            <div class="flex-container">
+                    <div> Private university</div>
+                    <div>18% acceptance rate</div>
+                    <div>Ranking 3rd in USA</div>
+                    <div>$8,600/year
+                        average living expense</div>  
+            </div>
+            <div class="flex-container">
+                    <div>
+                        Average GRE 166Q
+                    </div>
+                    <div>#1 in CS</div>
+                    <div>$49,600/year average tuition fee</div>
+                    <div>$100,000/year
+                        salary</div>  
+            </div><br>
+            <div class="courses">
+                    <h1>Engineering graduate courses offered at MIT</h1>
+
+                    <table style="width:100%">
+                      <tr>
+                        <th>COURSES</th>
+                        <th>Description</th> 
+                      </tr>
+                      <tr>
+                        <td>Aerospace Engineering</td>
+                        <td>Aerospace Engineering</td>
+                        </tr>
+                      <tr>
+                        <td>Computer Science</td>
+                        <td>Computer Science</td>
+                      </tr>
+                      <tr>
+                        <td>Electrical Engineering</td>
+                        <td>Electrical Engineering</td>
+                      </tr>
+                    </table>
+            </div><br><br>
+ 
+        <div class="contact">
+            <div class="flex-container">
+                <div>
+                 Talk to a University Ambassdor<br><br><a class="button">CONTACT</a>
+                </div>
+                <div>See Similar Profiles<br><br><br><a class="button">CHECK</a></div>
+                <div>Join group of Columbia Aspirants<br><br><a class="button">JOIN</a></div>
+                <div>Talk to our Counsellor<br><br><br><a class="button">CONTACT</a></div>  
+            </div>
+        </div> </div>
+        <div id ="Arts">
+            <center><h1 style="margin-top: 30px;font-size:60px">Arts</h1></center>
+            <div class="flex-container">
+                    <div> Private university</div>
+                    <div>18% acceptance rate</div>
+                    <div>Ranking 3rd in USA</div>
+                    <div>$8,600/year
+                        average living expense</div>  
+            </div>
+            <div class="flex-container">
+                    <div>
+                        Average GRE 166Q
+                    </div>
+                    <div>#1 in CS</div>
+                    <div>$49,600/year average tuition fee</div>
+                    <div>$100,000/year
+                        salary</div>  
+            </div><br>
+            <div class="courses">
+                    <h1>Engineering graduate courses offered at MIT</h1>
+
+                    <table style="width:100%">
+                      <tr>
+                        <th>COURSES</th>
+                        <th>Description</th> 
+                      </tr>
+                      <tr>
+                        <td>Aerospace Engineering</td>
+                        <td>Aerospace Engineering</td>
+                        </tr>
+                      <tr>
+                        <td>Computer Science</td>
+                        <td>Computer Science</td>
+                      </tr>
+                      <tr>
+                        <td>Electrical Engineering</td>
+                        <td>Electrical Engineering</td>
+                      </tr>
+                    </table>
+            </div><br><br>
+ 
+        <div class="contact">
+            <div class="flex-container">
+                <div>
+                 Talk to a University Ambassdor<br><br><a class="button">CONTACT</a>
+                </div>
+                <div>See Similar Profiles<br><br><br><a class="button">CHECK</a></div>
+                <div>Join group of Columbia Aspirants<br><br><a class="button">JOIN</a></div>
+                <div>Talk to our Counsellor<br><br><br><a class="button">CONTACT</a></div>  
+            </div>
+        </div> </div>
+        <div id ="Architecture">
+            <center><h1 style="margin-top: 30px;font-size:60px">Architecture</h1></center>
+            <div class="flex-container">
+                    <div> Private university</div>
+                    <div>18% acceptance rate</div>
+                    <div>Ranking 3rd in USA</div>
+                    <div>$8,600/year
+                        average living expense</div>  
+            </div>
+            <div class="flex-container">
+                    <div>
+                        Average GRE 166Q
+                    </div>
+                    <div>#1 in CS</div>
+                    <div>$49,600/year average tuition fee</div>
+                    <div>$100,000/year
+                        salary</div>  
+            </div><br>
+            <div class="courses">
+                    <h1>Engineering graduate courses offered at MIT</h1>
+
+                    <table style="width:100%">
+                      <tr>
+                        <th>COURSES</th>
+                        <th>Description</th> 
+                      </tr>
+                      <tr>
+                        <td>Aerospace Engineering</td>
+                        <td>Aerospace Engineering</td>
+                        </tr>
+                      <tr>
+                        <td>Computer Science</td>
+                        <td>Computer Science</td>
+                      </tr>
+                      <tr>
+                        <td>Electrical Engineering</td>
+                        <td>Electrical Engineering</td>
+                      </tr>
+                    </table>
+            </div><br><br>
+ 
+        <div class="contact">
+            <div class="flex-container">
+                <div>
+                 Talk to a University Ambassdor<br><br><a class="button">CONTACT</a>
+                </div>
+                <div>See Similar Profiles<br><br><br><a class="button">CHECK</a></div>
+                <div>Join group of Columbia Aspirants<br><br><a class="button">JOIN</a></div>
+                <div>Talk to our Counsellor<br><br><br><a class="button">CONTACT</a></div>  
+            </div>
+        </div> </div>
+        <div class="margin-in-main">
+            <div class="detail">
+            <div>
+                    <h1>CAMPUS</h1><p>
+                        Columbia University is located in the tremendously upmarket Manhattan district of New York. There’s really nothing else to say, is there? Manhattan! THE Manhattan!
+                        The subway station and a major bus stop are right outside the gate of Columbia University, so travelling is pretty convenient for all students, regardless of where they stay.There are 20 major libraries in the Columbia University campus. There is the popular Blue Java Coffee Bar on campus as well.
+                        
+                        </p>                  
+                    
+                    <h1>STUDENT LIFE</h1>
+                    <p> Columbia Engineering fosters a student environment that meets the needs of its intellectually curious, diverse, and engaged student body. From student clubs to design competitions to networking events, we offer countless co-curricular activities as well as opportunities for community service and outreach.</p>
+                    
+                    <h1>JOBS AND PLACEMENT</h1>
+                    <p>What do you think?
+                        This is something you really shouldn’t be worrying about. You’ll definitely get a job, and a pretty good one, too. The fees you pay at Columbia seems like pocket change once you get yourself placed.</p>                    
+                    <h1>ALUMNI</h1>
+                    <p>Vikram Pandit - CEO of Citigroup<br><br>
+                        Stephen Friedman - Chairman of Goldman Sachs, National Economic Council director<br><br>
+                        Warren Buffett - President of Berkshire Hathaway<br><br></p>
+            </div>
+        </div></div>
+    </main>
+    <footer></footer>
+</body>
+<script>
+function Dropdown(){
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+        function Engineering(){
+            var Business = document.getElementById("Engineering");
+            Business.style.display = "block";
+            var Business = document.getElementById("Business");
+            Business.style.display = "none";
+            var Business = document.getElementById("Science");
+            Business.style.display = "none";
+            var Business = document.getElementById("Arts");
+            Business.style.display = "none";
+            var Business = document.getElementById("Architecture");
+            Business.style.display = "none";
+        }
+        function Business(){
+            var Business = document.getElementById("Engineering");
+            Business.style.display = "none";
+            var Business = document.getElementById("Business");
+            Business.style.display = "block";
+            var Business = document.getElementById("Science");
+            Business.style.display = "none";
+            var Business = document.getElementById("Arts");
+            Business.style.display = "none";
+            var Business = document.getElementById("Architecture");
+            Business.style.display = "none";
+        }
+        function Science(){
+            var Business = document.getElementById("Engineering");
+            Business.style.display = "none";
+            var Business = document.getElementById("Business");
+            Business.style.display = "none";
+            var Business = document.getElementById("Science");
+            Business.style.display = "block";
+            var Business = document.getElementById("Arts");
+            Business.style.display = "none";
+            var Business = document.getElementById("Architecture");
+            Business.style.display = "none";
+        }
+        function Arts(){
+            var Business = document.getElementById("Engineering");
+            Business.style.display = "none";
+            var Business = document.getElementById("Business");
+            Business.style.display = "none";
+            var Business = document.getElementById("Science");
+            Business.style.display = "none";
+            var Business = document.getElementById("Arts");
+            Business.style.display = "block";
+            var Business = document.getElementById("Architecture");
+            Business.style.display = "none";
+        }
+        function Architecture(){
+            var Business = document.getElementById("Engineering");
+            Business.style.display = "none";
+            var Business = document.getElementById("Business");
+            Business.style.display = "none";
+            var Business = document.getElementById("Science");
+            Business.style.display = "none";
+            var Business = document.getElementById("Arts");
+            Business.style.display = "none";
+            var Business = document.getElementById("Architecture");
+            Business.style.display = "block";
+        }
+</script>
