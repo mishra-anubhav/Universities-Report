@@ -1,6 +1,6 @@
 # Universities-Report
 
-I created these websites during my internship for a startup whose aim was to provide reports for the universities where international students from India can go.
+I created these websites during my internship for a startup- Leap Finance, a fintech platform for Indian students pursuing higher education overseas, has raised $5.5 million led by Sequoia India.
 
 Click on the respective links to see the specifc websites:
 
